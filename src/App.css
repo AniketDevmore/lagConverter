@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,171 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+body {  
+  background:#ffffff none repeat scroll 0 0;
+  color:var(--nv-text-color);
+  font-size:100%;
+  line-height:var(--bodylineheight);
+  letter-spacing:var(--bodyletterspacing);
+  font-family:var(--bodyfontfamily),var(--nv-fallback-ff);
+  text-transform:var(--bodytexttransform);
+  font-weight:var(--bodyfontweight);
+  direction:ltr;
+}  
+body { 
+/* CSS Variables that may have been missed get put on body */ 
+  --formfieldbordercolor:  var(--nv-secondary-accent); 
+} 
+
+* { 
+  box-sizing: border-box;
+} 
+
+body > .wrapper:not(.et-fb-iframe-ancestor) { 
+  overflow: hidden;
+} 
+
+body { 
+  margin: 0; 
+  padding: 0;
+} 
+
+body { 
+  background-color: var(--nv-site-bg); 
+  color: var(--nv-text-color); 
+  font-size: var(--bodyfontsize); 
+  line-height: var(--bodylineheight); 
+  letter-spacing: var(--bodyletterspacing); 
+  font-family: var(--bodyfontfamily),var(--nv-fallback-ff); 
+  text-transform: var(--bodytexttransform); 
+  font-weight: var(--bodyfontweight); 
+  overflow-x: hidden; 
+  direction: ltr; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+html { 
+  margin: 0; 
+  padding: 0;
+} 
+
+html { 
+  box-sizing: border-box; 
+  -ms-overflow-style: scrollbar;
+} 
+
+html { 
+  font-size: 100%;
+} 
+
+:root { 
+  --wp--preset--color--neve-link-color: var(--nv-primary-accent); 
+  --wp--preset--color--neve-link-hover-color: var(--nv-secondary-accent); 
+  --wp--preset--color--nv-site-bg: var(--nv-site-bg); 
+  --wp--preset--color--nv-light-bg: var(--nv-light-bg); 
+  --wp--preset--color--nv-dark-bg: var(--nv-dark-bg); 
+  --wp--preset--color--neve-text-color: var(--nv-text-color); 
+  --wp--preset--color--nv-text-dark-bg: var(--nv-text-dark-bg); 
+  --wp--preset--color--nv-c-1: var(--nv-c-1); 
+  --wp--preset--color--nv-c-2: var(--nv-c-2); 
+} 
+
+:root { 
+  --container: 748px; 
+  --primarybtnbg: var(--nv-secondary-accent); 
+  --secondarybtnbg: var(--nv-primary-accent); 
+  --primarybtnhoverbg: var(--nv-secondary-accent); 
+  --secondarybtnhoverbg: var(--nv-primary-accent); 
+  --primarybtncolor: var(--nv-text-color); 
+  --secondarybtncolor: var(--nv-text-dark-bg); 
+  --primarybtnhovercolor: var(--nv-text-color); 
+  --secondarybtnhovercolor: var(--nv-text-dark-bg); 
+  --bodyfontfamily: Poppins; 
+  --bodyfontsize: 15px; 
+  --bodylineheight: 1.6em; 
+  --bodyletterspacing: 0px; 
+  --bodyfontweight: 400; 
+  --bodytexttransform: none; 
+  --formfieldbgcolor: var(--nv-site-bg); 
+  --formfieldcolor: var(--nv-text-color); 
+} 
+
+@media (min-width: 576px){ 
+:root { 
+  --container: 992px; 
+  --bodyfontsize: 16px; 
+  --bodylineheight: 1.6em; 
+  --bodyletterspacing: 0px; 
+} 
+}     
+
+:root { 
+  --nv-primary-accent: #2b2b2b; 
+  --nv-secondary-accent: #fcaf3b; 
+  --nv-site-bg: #ffffff; 
+  --nv-light-bg: #ededed; 
+  --nv-dark-bg: #14171c; 
+  --nv-text-color: #14171c; 
+  --nv-text-dark-bg: #ffffff; 
+  --nv-c-1: #77b978; 
+  --nv-c-2: #f37262; 
+  --nv-fallback-ff: Arial, Helvetica, sans-serif;
+} 
+
+textarea { 
+  margin: 0; 
+  padding: 0;
+} 
+
+textarea { 
+  margin: 0;
+} 
+
+textarea { 
+  display: inline-block; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  outline: 0; 
+  resize: vertical;
+} 
+
+textarea { 
+  line-height: inherit; 
+  box-sizing: border-box;
+} 
+
+textarea { 
+  padding: 5px 8px; 
+  vertical-align: middle; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; 
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+} 
+
+textarea:focus { 
+  outline: 0; 
+  box-shadow: 0 0 3px 0 var(--nv-secondary-accent); 
+  --formfieldbordercolor: var(--nv-secondary-accent);
+} 
+
+#indiatyping_data { 
+  margin: 10px auto auto; 
+  min-height: 200px; 
+  min-width: 90%; 
+  float: left; 
+  border: 2px solid gray; 
+  border-radius: 5px;
+} 
+
+*,:after,:before { 
+  box-sizing: border-box;
+} 
+
+
