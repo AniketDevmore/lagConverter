@@ -46,7 +46,7 @@ const MainScreen = () => {
         convertText(translatedValues, enteredValue)
       );
       setEnteredValue(convertText(translatedValues, enteredValue, 0));
-      setTranslatedValues([]);
+      // setTranslatedValues([]);
       // setEnteredValue((prevText) => prevText + ` ${translatedValues[0]}`); // Replace space with custom text
     }
   };
