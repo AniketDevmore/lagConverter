@@ -8,7 +8,7 @@ const MainScreen = () => {
 
   useEffect(() => {}, [translatedValues]);
 
-  const clickHandler = async (text) => {
+  const clickHandler = async (text:any) => {
     const value = text.trim().split(" ").pop();
     console.log("clicked------------>>", value);
     if (!value) {
@@ -18,7 +18,7 @@ const MainScreen = () => {
     setEnteredValue(text);
 
     try {
-      let getList = await getTranslatedList(value);
+      let getList:any = await getTranslatedList(value);
       if (getList[0] === "SUCCESS") {
         console.log("getList-------------------->>", getList[1][0][1]);
         setTranslatedValues(getList[1][0][1]);
@@ -28,7 +28,7 @@ const MainScreen = () => {
     }
   };
 
-  const convertText = (data, value, index) => {
+  const convertText:any = (data:any, value:any, index:any) => {
     let val = value.trim().split(" ");
     let newValue = "";
     for (let i = 0; i <= val.length - 2; i++) {
@@ -38,7 +38,7 @@ const MainScreen = () => {
     return newValue + " " + data[index] + " ";
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event:any) => {
     if (event.code === "Space" || event.code === "Enter") {
       event.preventDefault(); // Prevents the default space behavior
       console.log(
@@ -51,7 +51,7 @@ const MainScreen = () => {
     }
   };
 
-  const getRandom = (index) => {
+  const getRandom = (index:any) => {
     setEnteredValue(convertText(translatedValues, enteredValue, index));
   };
 

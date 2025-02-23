@@ -40,7 +40,7 @@ axiosInstance.interceptors.response.use(
       return Promise.reject(error);
     }
     config.__retryCount += 1;
-    let backoff = new Promise(function (resolve) {
+    let backoff = new Promise(function (resolve:any) {
       setTimeout(function () {
         resolve();
       }, config.retryDelay || 1);
@@ -53,7 +53,7 @@ axiosInstance.interceptors.response.use(
 );
 
 //Get Request API call
-export const doGet = (url, params, headers) => {
+export const doGet = (url:any, params:any, headers:any) => {
   return axiosInstance
     .get(url, {
       headers: {
@@ -70,14 +70,14 @@ export const doGet = (url, params, headers) => {
 
 //Post Request API call
 export const doPost = async (
-  url,
-  body,
-  headers,
+  url:any,
+  body:any,
+  headers:any,
   showLoader = true,
   customTimeout = false
 ) => {
   return new Promise((resolve, reject) => {
-    const apiHeader = {
+    const apiHeader:any = {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -102,7 +102,7 @@ export const doPost = async (
 };
 
 //Patch Request API call
-export const doPatch = async (url, body, headers) => {
+export const doPatch = async (url:any, body:any, headers:any) => {
   return axiosInstance
     .patch(url, body, {
       headers: {
@@ -123,7 +123,7 @@ export const doPatch = async (url, body, headers) => {
 };
 
 //Put Request API call
-export const doPut = (url, body, headers) => {
+export const doPut = (url:any, body:any, headers:any) => {
   return axiosInstance
     .put(url, body, {
       headers: {
@@ -139,7 +139,7 @@ export const doPut = (url, body, headers) => {
 };
 
 //Delete Request API call
-export const doDelete = (url, body, headers) => {
+export const doDelete = (url:any, body:any, headers:any) => {
   return axiosInstance
     .delete(url, {
       data: body,

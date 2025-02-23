@@ -1,7 +1,7 @@
 import { baseUrl, lang, textReq } from "../utils/constant";
 import { doGet } from "./api";
 
-export const getTranslatedList = (value) => {
+export const getTranslatedList = (value:any) => {
   const Headers = {
     "Content-Type": "application/json; charset=UTF-8",
   };

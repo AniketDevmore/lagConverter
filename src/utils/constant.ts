@@ -1,6 +1,6 @@
-export const baseUrl = "https://inputtools.google.com";
-export const textReq = "/request?text=";
-export const lang = "&itc=mr-t-i0-und&num=13&cp=0&cs=0&ie=utf-8&oe=utf-8&app=demopage";
+export const baseUrl:any = "https://inputtools.google.com";
+export const textReq:any = "/request?text=";
+export const lang:any = "&itc=mr-t-i0-und&num=13&cp=0&cs=0&ie=utf-8&oe=utf-8&app=demopage";
 // https://inputtools.google.com/request?text=a&itc=mr-t-i0-und&num=13&cp=0&cs=0&ie=utf-8&oe=utf-8&app=demopage
 
 // Hindi	hi-t-i0-und

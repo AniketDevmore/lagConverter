@@ -4,6 +4,7 @@ const CommonHeading = () => {
     return (
         <div>
             <p>CommonHeading</p>
+            {/* <h1>{}</h1> */}
         </div>
     )
 }
