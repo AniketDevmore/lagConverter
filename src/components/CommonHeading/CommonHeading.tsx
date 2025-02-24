@@ -1,10 +1,15 @@
 import React from "react";
+import './CommonHeading.css'
 
-const CommonHeading = () => {
+interface Props {
+    title: String
+}
+
+const CommonHeading: React.FC<Props> = ({ title }) => {
     return (
-        <div>
-            <p>CommonHeading</p>
-            {/* <h1>{}</h1> */}
+        <div className="heading-container">
+            {/* <p>CommonHeading</p> */}
+            <h1 className="heading-text">{title}</h1>
         </div>
     )
 }
